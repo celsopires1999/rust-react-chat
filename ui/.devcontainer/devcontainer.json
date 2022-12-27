@@ -2,7 +2,7 @@
 // https://github.com/microsoft/vscode-dev-containers/tree/v0.202.5/containers/docker-existing-docker-compose
 // If you want to run as a non-root user in the container, see .devcontainer/docker-compose.yml.
 {
-  "name": "Rust React Chat",
+  "name": "Client Rust React Chat",
   // Update the 'dockerComposeFile' list if you have more compose files or use different names.
   // The .devcontainer/docker-compose.yml file contains any overrides you need/want to make.
   "dockerComposeFile": ["../docker-compose.yaml"],
@@ -11,7 +11,7 @@
   "service": "app",
   // The optional 'workspaceFolder' property is the path VS Code should open by default when
   // connected. This is typically a file mount in .devcontainer/docker-compose.yml
-  "workspaceFolder": "/home/rust/app",
+  "workspaceFolder": "/home/node/app",
   // Set *default* container specific settings.json values on container create.
   "settings": {
     "terminal.integrated.defaultProfile.linux": "bash"
@@ -39,10 +39,7 @@
     "donjayamanne.githistory",
     "eamodio.gitlens",
     "vivaxy.vscode-conventional-commits",
-    "orta.vscode-jest",
-    "rust-lang.rust-analyzer",
-    "vadimcn.vscode-lldb",
-    "alexcvzz.vscode-sqlite"
+    "orta.vscode-jest"
   ]
   // Use 'forwardPorts' to make a list of ports inside the container available locally.
   // "forwardPorts": [],

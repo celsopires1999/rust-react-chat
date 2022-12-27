@@ -1,2 +1,22 @@
 ### List rooms ###
 GET http://localhost:8080/rooms
+
+### Create a user ###
+POST http://localhost:8080/users/create
+Content-Type: application/json
+
+{
+    "username": "Inês",
+    "phone": "+2"
+}
+
+### Get a user ###
+GET http://localhost:8080/users/cc356272-4685-4b1f-b663-477093fc2e88
+
+### Get a user given the phone number ###
+GET http://localhost:8080/users/phone/+2
+
+
+### Get conversations, given a room_id ###
+GET http://localhost:8080/conversations/f061383b-0393-4ce8-9a85-f31d03762263
+

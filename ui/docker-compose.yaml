@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  app:
+    build: .
+    container_name: rust-react-chat-client
+    volumes:
+      - .:/home/node/app
+    ports:
+      - 3000:3000
